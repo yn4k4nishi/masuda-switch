@@ -25,5 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
         Button exit_button = findViewById(R.id.exit_button);
         exit_button.setOnClickListener(v -> setMainScreen());
+
+        Button pc_screen = findViewById(R.id.pc_screen);
+        pc_screen.setOnClickListener(v -> setPCScreen());
+    }
+
+    private void setPCScreen(){
+        setContentView(R.layout.activity_game_pc);
+
+        Button close_button = findViewById(R.id.close_button);
+        close_button.setOnClickListener(v -> setGameScreen());
     }
 }
